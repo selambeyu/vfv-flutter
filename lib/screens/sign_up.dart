@@ -7,7 +7,7 @@ class SignUp extends StatelessWidget{
     // TODO: implement build
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: Colors.blueAccent,
+            backgroundColor: Colors.purple,
             title: Text("Vision Finding Village")
         ),
         body: SingleChildScrollView(
