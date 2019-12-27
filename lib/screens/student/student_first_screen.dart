@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vfv_app/screens/article/articel_page.dart';
 import 'package:vfv_app/screens/drawer.dart';
-import 'package:vfv_app/screens/student/category_selector.dart';
+import 'package:vfv_app/screens/question_answer/question.dart';
+//import 'package:vfv_app/screens/student/category_selector.dart';
 
 class StudentFirstScreen extends StatelessWidget{
   @override
@@ -29,10 +30,9 @@ class StudentFirstScreen extends StatelessWidget{
         ),
 
       body: Padding(
-        padding: EdgeInsets.only(left: 35.0,top: 5.0),
+        padding: EdgeInsets.only(left: 30.0,top: 45.0),
         child: Column(
           children: <Widget>[
-            CategorySelector(),
             Row(children:<Widget>[
                   Card(
               child: Container(
@@ -84,17 +84,19 @@ class StudentFirstScreen extends StatelessWidget{
                       children: <Widget>[
                         Padding(
                           padding: EdgeInsets.only(top: 10,bottom: 10.0),
-                          child:Icon(Icons.visibility),
+                          child:Icon(Icons.question_answer),
                         ),
                         Padding(
                           padding: EdgeInsets.only(bottom: 10),
-                          child:   Text("Vision")
+                          child:   Text("Question")
                           ,),
 
                         Padding(
                           padding: EdgeInsets.only(bottom: 10.0),
                           child:  MaterialButton(
-                            onPressed: (){},
+                            onPressed: (){
+                              Navigator.push(context, new MaterialPageRoute(builder: (context)=>QuestionWidget()));
+                            },
                             elevation: 10.0,
                             child: Text("View"),
                             color: Colors.blueAccent,
