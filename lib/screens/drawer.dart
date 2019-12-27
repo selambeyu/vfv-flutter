@@ -54,7 +54,7 @@ class CustomListTile extends StatelessWidget{
     return Padding(
         padding: EdgeInsets.fromLTRB(8.0, 0, 8.0, 0),
         child:InkWell(
-            splashColor: Colors.orangeAccent,
+            splashColor: Colors.purpleAccent,
             onTap: (){},
             child:Container(
               height: 40.0,
