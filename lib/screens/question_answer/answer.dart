@@ -8,6 +8,11 @@ class AnswerWidget extends StatelessWidget{
     return Container(
       child: Column(
         children: <Widget>[
+          Card(
+            child: Container(
+
+            ),
+          )
 
         ],
       ),

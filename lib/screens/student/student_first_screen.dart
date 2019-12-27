@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vfv_app/screens/article/articel_page.dart';
 import 'package:vfv_app/screens/drawer.dart';
 import 'package:vfv_app/screens/student/category_selector.dart';
 
@@ -268,7 +269,9 @@ class StudentFirstScreen extends StatelessWidget{
                           Padding(
                             padding: EdgeInsets.only(bottom: 10.0),
                             child:MaterialButton(
-                              onPressed: (){},
+                              onPressed: (){
+                                Navigator.push(context, new MaterialPageRoute(builder: (context)=>ArticlePage()));
+                              },
                               elevation: 10.0,
                               child: Text("View"),
                               color: Colors.blueAccent,
