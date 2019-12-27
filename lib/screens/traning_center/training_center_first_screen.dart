@@ -24,6 +24,29 @@ class TrainingCetersFirstScreen extends StatelessWidget{
       body: Column(
         children: <Widget>[
           CategorySelector(),
+          Expanded(
+            child: Container(
+              child: Column(
+                children: <Widget>[
+                  ListView.builder(
+                    scrollDirection: Axis.vertical,
+                    itemBuilder: (BuildContext context, int index){
+                      return Container(
+                        child: Column(
+                          children: <Widget>[
+                            Text("text one "),
+                            Text("text two "),
+                            Text("Text three")
+                          ],
+                        ),
+                      );
+                    },
+                  )
+
+                ],
+              ),
+            ),
+          )
         ],
       ),
 

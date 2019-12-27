@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vfv_app/screens/log_in.dart';
+import 'package:vfv_app/screens/student/student_first_screen.dart';
 import 'package:vfv_app/screens/traning_center/training_center_first_screen.dart';
 
 class SignUp extends StatelessWidget{
@@ -129,7 +130,7 @@ class SignUp extends StatelessWidget{
                           child: Text("Student",style: TextStyle(color: Colors.white60),),
                           color: Colors.purple,
                           onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=>TrainingCetersFirstScreen()));
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>StudentFirstScreen()));
                           },
                         ),
                       )
