@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vfv_app/screens/drawer.dart';
 import 'package:vfv_app/screens/professional/category_selector.dart';
+import 'package:vfv_app/screens/question_answer/question.dart';
 
 
 
@@ -20,7 +21,9 @@ class ProfessionalFirstScreen extends StatelessWidget{
           children: <Widget>[
             Container(
               child: CategorySelector(),
-            )
+            ),
+            QuestionWidget()
+           ,
 
           ],
         ),
@@ -29,3 +32,7 @@ class ProfessionalFirstScreen extends StatelessWidget{
   }
 
 }
+
+//TextField(autofocus: true,
+//autocTextField(autofocus: true,
+//autocorrect: true,)

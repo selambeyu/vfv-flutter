@@ -8,13 +8,21 @@ class StudentFirstScreen extends StatelessWidget{
     // TODO: implement build
     return Scaffold(
         appBar: AppBar(
-//          leading: IconButton(
-//              icon: Icon(Icons.arrow_back),
-//              onPressed: (){
-//                Navigator.pop(context,false);
-//
-//              }
-//          ),
+          actions: <Widget>[
+            Row(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.only(left:60),
+                  child: IconButton(
+                    onPressed: (){
+                      Navigator.pop(context,false);
+                    },
+                    icon: Icon(Icons.arrow_back),
+                  ),
+                )
+              ],
+            )
+          ],
           title: Text("Vision Finding Village"),
           backgroundColor: Colors.purple,
         ),

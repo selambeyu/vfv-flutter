@@ -16,23 +16,23 @@ class LogIn extends StatelessWidget{
                    }
         ),
           title: Text("Vision Finding Village"),
-          backgroundColor: Colors.blueAccent,
+          backgroundColor: Colors.purple,
         ),
         body: SingleChildScrollView(
             child:Padding(
-              padding: EdgeInsets.only(top:20.0),
+              padding: EdgeInsets.only(top:20.0,left: 20.0,right: 20.0),
               child:     Center(
                 child: Column(
                   children: <Widget>[
+                    Image.asset("assets/images/logo.png"),
                     Container(
                       padding: EdgeInsets.only(top: 10.0),
                       child: TextField(
                         decoration: InputDecoration(
                             labelText: "Enter user name",
                             border: OutlineInputBorder(),
-                            icon: Icon(
-                                Icons.verified_user
-                            )
+                            prefixIcon: Icon(Icons.verified_user),
+
                         ),
 
                       ),
@@ -40,12 +40,12 @@ class LogIn extends StatelessWidget{
                     Container(
                       padding: EdgeInsets.only(top: 10.0),
                       child: TextField(
+                        obscureText: true,
                         decoration: InputDecoration(
                             labelText: "Enter password",
                             border: OutlineInputBorder(),
-                            icon: Icon(
-                                Icons.visibility
-                            )
+                            prefixIcon: Icon(Icons.visibility),
+
                         ),
                       ),
                     ),

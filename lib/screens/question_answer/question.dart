@@ -10,11 +10,20 @@ class QuestionWidget extends StatelessWidget{
       child: Column(
         children: <Widget>[
           TextField(
+            decoration: InputDecoration(hintText: "ur Question"),
+            controller: _textInputController,
 
-          ),   TextField(maxLines: null, decoration: InputDecoration(hintText: "Add your comment"),
+          ),
+          TextField(
+              obscureText: true,
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                  hintText: "Add your comment",
+                  border: OutlineInputBorder()),
               controller: _textInputController),
-          Padding(padding: EdgeInsets.only(top: 10.0), child:
-          RaisedButton(
+          Padding(
+              padding: EdgeInsets.only(top: 10.0),
+              child: RaisedButton(
               color: Colors.orange, textColor: Colors.white,
               child: Text("Add comment"),
               onPressed: () {})

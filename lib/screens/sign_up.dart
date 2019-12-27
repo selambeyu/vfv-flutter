@@ -30,9 +30,9 @@ class SignUp extends StatelessWidget{
                             decoration: InputDecoration(
                                 labelText: "Enter your name",
                                 border:OutlineInputBorder(),
-                                icon: Icon(
+                                prefixIcon:Icon(
                                     Icons.verified_user
-                                )
+                                ) ,
                             ),
                           )
                       )
@@ -44,9 +44,10 @@ class SignUp extends StatelessWidget{
                           decoration: InputDecoration(
                               labelText: "Enter your email",
                               border:OutlineInputBorder(),
-                              icon: Icon(
+                              prefixIcon: Icon(
                                   Icons.email
-                              )
+                              ),
+
                           ),
                         ),
                       )
@@ -54,14 +55,13 @@ class SignUp extends StatelessWidget{
                         height: 50.0,
                         padding: EdgeInsets.only(top: 10.0),
                         child: TextField(
+                          obscureText: true,
                           scrollController: ScrollController(),
                           decoration: InputDecoration(
                               labelText: "Enter your password",
                               border:OutlineInputBorder(),
-                              icon: Icon(
-                                Icons.visibility,
+                              prefixIcon:  Icon(Icons.visibility),
 
-                              )
 
                           ),
                         ),
@@ -74,11 +74,7 @@ class SignUp extends StatelessWidget{
                           decoration: InputDecoration(
                               labelText: "Enter your role type",
                               border:OutlineInputBorder(),
-                              icon: Icon(
-                                Icons.supervised_user_circle,
-
-                              )
-
+                              prefixIcon: Icon(Icons.supervised_user_circle),
                           ),
                         ),
 
