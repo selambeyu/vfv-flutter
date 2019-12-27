@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vfv_app/screens/log_in.dart';
+import 'package:vfv_app/screens/traning_center/training_center_first_screen.dart';
 
 class SignUp extends StatelessWidget{
   @override
@@ -109,10 +110,33 @@ class SignUp extends StatelessWidget{
                         ]
                         ,
 
+                      ),
+                      Container(
+                        height: 50.0,
+                        padding: EdgeInsets.only(top: 10.0),
+                        child: MaterialButton(
+                          child: Text("Training",style: TextStyle(color: Colors.white60),),
+                          color: Colors.purple,
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>TrainingCetersFirstScreen()));
+                          },
+                        ),
+                      ),
+                      Container(
+                        height: 50.0,
+                        padding: EdgeInsets.only(top: 10.0),
+                        child: MaterialButton(
+                          child: Text("Student",style: TextStyle(color: Colors.white60),),
+                          color: Colors.purple,
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>TrainingCetersFirstScreen()));
+                          },
+                        ),
                       )
 
 
                     ],
+
                   ),
 
 

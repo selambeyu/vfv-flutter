@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+//import 'package:vfv_app/screens/traning_center/training_center_first_screen.dart';
+
 
 class DrawerWidget extends StatelessWidget{
   @override
@@ -13,8 +15,8 @@ class DrawerWidget extends StatelessWidget{
             decoration: BoxDecoration(
               gradient: LinearGradient(
                   colors: <Color>[
-                    Colors.deepOrange,
-                    Colors.orangeAccent
+                    Colors.purple,
+                    Colors.purpleAccent
                   ]
               ),
 
@@ -28,7 +30,7 @@ class DrawerWidget extends StatelessWidget{
               ),
             ),
           ),
-          CustomListTile(Icons.person,"User",()=>{}),
+          CustomListTile(Icons.people,"Traning Center",()=>{}),
           CustomListTile(Icons.email,"Email",()=>{}),
           CustomListTile(Icons.verified_user,"Contact",()=>{}),
 
