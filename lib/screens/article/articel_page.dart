@@ -28,6 +28,20 @@ class ArticlePage extends StatelessWidget{
         title: Text("Vision Finding Village"),
       ),
       drawer: DrawerWidget(),
+        bottomNavigationBar: BottomNavigationBar(items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title: Text("Home")
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.message),
+            title: Text("Messeges")
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            title: Text("Profile")
+          )
+        ]),
       body: SingleChildScrollView(
           child:Padding(
             padding: EdgeInsets.only(top: 30.0),
@@ -70,7 +84,7 @@ class ArticlePage extends StatelessWidget{
                           padding: EdgeInsets.only(left: 150),
                           child: MaterialButton(
                             onPressed: (){},
-                            child: Text("Regiter"),
+                            child: Text("More"),
                             color: Colors.blue,
                             elevation: 10.0,
                           ) ,
@@ -120,7 +134,7 @@ class ArticlePage extends StatelessWidget{
                           padding: EdgeInsets.only(left: 150),
                           child: MaterialButton(
                             onPressed: (){},
-                            child: Text("Regiter"),
+                            child: Text("More"),
                             color: Colors.blue,
                             elevation: 10.0,
                           ) ,
@@ -170,7 +184,7 @@ class ArticlePage extends StatelessWidget{
                           padding: EdgeInsets.only(left: 150),
                           child: MaterialButton(
                             onPressed: (){},
-                            child: Text("Regiter"),
+                            child: Text("More"),
                             color: Colors.blue,
                             elevation: 10.0,
                           ) ,
@@ -220,7 +234,7 @@ class ArticlePage extends StatelessWidget{
                           padding: EdgeInsets.only(left: 150),
                           child: MaterialButton(
                             onPressed: (){},
-                            child: Text("Regiter"),
+                            child: Text("More"),
                             color: Colors.blue,
                             elevation: 10.0,
                           ) ,
@@ -270,7 +284,7 @@ class ArticlePage extends StatelessWidget{
                           padding: EdgeInsets.only(left: 150),
                           child: MaterialButton(
                             onPressed: (){},
-                            child: Text("Regiter"),
+                            child: Text("More"),
                             color: Colors.blue,
                             elevation: 10.0,
                           ) ,

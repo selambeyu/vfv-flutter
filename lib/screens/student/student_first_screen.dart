@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vfv_app/screens/article/articel_page.dart';
 import 'package:vfv_app/screens/drawer.dart';
 import 'package:vfv_app/screens/question_answer/question.dart';
+import 'package:vfv_app/screens/traning_center/trainingcenters_list.dart';
 //import 'package:vfv_app/screens/student/category_selector.dart';
 
 class StudentFirstScreen extends StatelessWidget{
@@ -51,7 +52,9 @@ class StudentFirstScreen extends StatelessWidget{
                     Padding(
                       padding: EdgeInsets.only(bottom: 20.0),
                       child: MaterialButton(
-                        onPressed: (){},
+                        onPressed: (){
+                          Navigator.push(context, new MaterialPageRoute(builder: (context)=>TrainingCentresList()));
+                        },
                         elevation: 10.0,
                         child: Text("View"),
                         color: Colors.blueAccent,) ,
