@@ -72,7 +72,7 @@ class QuestionWidget extends StatelessWidget{
                           padding: EdgeInsets.only(left: 150,top: 20),
                           child: MaterialButton(
                             onPressed: (){},
-                            child: Text("Regiter"),
+                            child: Text("Answer"),
                             color: Colors.blue,
                             elevation: 20.0,
                           ) ,
@@ -128,7 +128,7 @@ class QuestionWidget extends StatelessWidget{
                           padding: EdgeInsets.only(left: 150,top: 20),
                           child: MaterialButton(
                             onPressed: (){},
-                            child: Text("Regiter"),
+                            child: Text("Answer"),
                             color: Colors.blue,
                             elevation: 20.0,
                           ) ,
@@ -184,7 +184,7 @@ class QuestionWidget extends StatelessWidget{
                           padding: EdgeInsets.only(left: 150,top: 20),
                           child: MaterialButton(
                             onPressed: (){},
-                            child: Text("Regiter"),
+                            child: Text("Answer"),
                             color: Colors.blue,
                             elevation: 20.0,
                           ) ,
@@ -240,7 +240,7 @@ class QuestionWidget extends StatelessWidget{
                           padding: EdgeInsets.only(left: 150,top: 20),
                           child: MaterialButton(
                             onPressed: (){},
-                            child: Text("Regiter"),
+                            child: Text("Answer"),
                             color: Colors.blue,
                             elevation: 20.0,
                           ) ,

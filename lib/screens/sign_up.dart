@@ -20,7 +20,7 @@ class SignUp extends StatelessWidget{
                   child: Column(
                     children: <Widget>[
                       Container(
-                        child: Image.asset("assets/images/logo.png"),
+                        child: Image.asset("assets/images/logo.png",height: 200,width: 200,),
                       ),
                       Container(
                           height: 50.0,
@@ -61,8 +61,6 @@ class SignUp extends StatelessWidget{
                               labelText: "Enter your password",
                               border:OutlineInputBorder(),
                               prefixIcon:  Icon(Icons.visibility),
-
-
                           ),
                         ),
 
